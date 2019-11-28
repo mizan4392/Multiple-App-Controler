@@ -1,0 +1,26 @@
+GET http://localhost:3002/controler
+
+
+###
+
+GET http://localhost:3002/controler/application
+
+###
+GET http://localhost:3002/controler/job-type
+
+###
+GET http://localhost:3002/controler/add-user
+
+###
+POST  http://localhost:3002/controler/add-user
+Content-Type: application/json
+
+
+
+{
+    "user_name":"Anika",
+    "first_name":"Anika",
+    "last_name":"Rahman",
+    "app_name":"diu",
+    "type_name":"user"
+}

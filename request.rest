@@ -9,18 +9,42 @@ GET http://localhost:3002/controler/application
 GET http://localhost:3002/controler/job-type
 
 ###
-GET http://localhost:3002/controler/add-user
-
-###
-POST  http://localhost:3002/controler/add-user
+POST  http://localhost:3002/user/signup
 Content-Type: application/json
 
 
 
 {
-    "user_name":"Anika",
-    "first_name":"Anika",
-    "last_name":"Rahman",
+    "user_name":"Rana1",
+    "first_name":"Asshrafuzzaman1",
+    "last_name":"Rana1",
     "app_name":"diu",
-    "type_name":"user"
+    "type_name":"admin",
+    "password":123456,
+    "email":"rana1@gmail.com"
+}
+
+###
+POST  http://localhost:3002/user/login
+Content-Type: application/json
+
+
+
+{
+    "password":123456,
+    "email":"rana1@gmail.com"
+}
+
+
+
+###
+POST  http://localhost:3002/controler/update
+Content-Type: application/json
+
+
+
+{
+    "user_id":8,
+    "app_name":"du",
+    "type_name":"superadmin"
 }

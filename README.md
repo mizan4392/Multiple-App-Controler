@@ -4,32 +4,33 @@
 3. run `npm instll` to downlode the packages <br>
 4. run `npm start` to start the project locally <br>
 
-The project will open on portno 3002.
+The project will open on portno 3002.<br>
 
 Routs:<br>
 `------------------------------------------------------------------------------------------------------`<br>
-GET:
+GET:<br>
 `-----------------------------------------------------------------------------------------------------`<br>
-`/controler/`
+`/controler/` <br>
 
-Response: `Array of user object`
+Response: `Array of user object`<br>
 `-------------------------------------------------------------------------------------------------------`<br>
-`/controler/app-list`
-Response: `Array of application`
+`/controler/app-list`<br>
+Response: `Array of application`<br>
 `------------------------------------------------------------------------------------------------------`<br>
-`/controler/role-list`
-Response: `Array of Job role list`
+`/controler/role-list`<br>
+Response: `Array of Job role list`<br>
 `-------------------------------------------------------------------------------------------------------`<br>
-`/user/info`
-Authorization: `Auth token`
+`/user/info`<br>
+Authorization: `Auth token`<br>
 
-response : Object of specific user info
+response : Object of specific user info<br>
 `-------------------------------------------------------------------------------------------------------`<br>
 `--------------------------------------------------------------------------------------------------------`<br>
-POST :
+POST :<br>
 `------------------------------------------------------------------------------------------------------`<br>
-`user/signup`
-Content-Type: application/json
+`user/signup`<br>
+Content-Type: application/json<br>
+<div>
 Request body:
 {
     "user_name":"name",
@@ -40,28 +41,32 @@ Request body:
     "password":password,
     "email":"Email"
 }
-response: `sucess`
+</div>
+response: `sucess`<br>
 `---------------------------------------------------------------------------------------------------------`<br>
-`/user/login`
-Content-Type: application/json
+`/user/login`<br>
+Content-Type: application/json<br>
+<div>
 Request body:
 {
     "email":"rana1@gmail.com",
     "password":123456
     
 }
-response: `token` on sucess login and `Invalid user` on failed
+</div>
+response: `token` on sucess login and `Invalid user` on failed<br>
 `-----------------------------------------------------------------------------------------------------------`<br>
-`/controler/update`
-Content-Type: application/json
+`/controler/update`<br>
+Content-Type: application/json<br>
+<div>
 Request body:
 {
     "user_id":8,
     "app_name":"du",
     "type_name":"superadmin"
 }
-
-response: `user updated` on sucess update and  `Invalid user` on failed
+</div>
+response: `user updated` on sucess update and  `Invalid user` on failed<br>
 
 `--------------------------------------------------------------------------------------------------------------`<br>
   

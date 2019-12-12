@@ -7,30 +7,36 @@
 The project will open on portno 3002.<br>
 
 Routs:<br>
-`------------------------------------------------------------------------------------------------------`<br>
-GET:<br>
-`-----------------------------------------------------------------------------------------------------`<br>
+---
+
+## GET:<br>
+
+---
+
 `/controler/` <br>
 
 Response: `Array of user object`<br>
-`-------------------------------------------------------------------------------------------------------`<br>
+
+---
+
 `/controler/app-list`<br>
 Response: `Array of application`<br>
-`------------------------------------------------------------------------------------------------------`<br>
+---
+
 `/controler/role-list`<br>
 Response: `Array of Job role list`<br>
-`-------------------------------------------------------------------------------------------------------`<br>
+---
 `/user/info`<br>
 Authorization: `Auth token`<br>
 
 response : Object of specific user info<br>
-`-------------------------------------------------------------------------------------------------------`<br>
-`--------------------------------------------------------------------------------------------------------`<br>
-POST :<br>
-`------------------------------------------------------------------------------------------------------`<br>
+---
+
+## POST :<br>
+---
 `user/signup`<br>
 Content-Type: application/json<br>
-<div>
+`
 Request body:
 {
     "user_name":"name",
@@ -41,32 +47,33 @@ Request body:
     "password":password,
     "email":"Email"
 }
-</div>
+`
 response: `sucess`<br>
-`---------------------------------------------------------------------------------------------------------`<br>
+---
 `/user/login`<br>
 Content-Type: application/json<br>
-<div>
+`
 Request body:
 {
     "email":"rana1@gmail.com",
     "password":123456
     
 }
-</div>
+`
+
 response: `token` on sucess login and `Invalid user` on failed<br>
-`-----------------------------------------------------------------------------------------------------------`<br>
+---
 `/controler/update`<br>
 Content-Type: application/json<br>
-<div>
+`
 Request body:
 {
     "user_id":8,
     "app_name":"du",
     "type_name":"superadmin"
 }
-</div>
-response: `user updated` on sucess update and  `Invalid user` on failed<br>
+`
 
-`--------------------------------------------------------------------------------------------------------------`<br>
+response: `user updated` on sucess update and  `Invalid user` on failed<br>
+---
   
